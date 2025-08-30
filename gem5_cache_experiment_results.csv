@@ -1,0 +1,8 @@
+config_name,parameters,L1D_hit_rate,L1D_miss_rate,L2_hit_rate_given_L1miss,L2_miss_rate_given_L1miss,AMAT_cycles,IPC,dynamic_instructions
+baseline,"L1D=32KB, L1I=32KB, L2=256KB, assoc=4, block=64B",0.9,0.1,0.93,0.07,6.84,1.61,50000000
+larger_L1,"L1D=64KB, L1I=64KB, L2=256KB, assoc=4, block=64B",0.945,0.055,0.93,0.07,5.56,1.927,50000000
+larger_L2,"L1D=32KB, L1I=32KB, L2=1MB, assoc=4, block=64B",0.9,0.1,0.965,0.035,6.42,1.73,50000000
+higher_assoc,"L1D=32KB, L1I=32KB, L2=256KB, assoc=8, block=64B",0.92,0.08,0.93,0.07,6.27,1.778,50000000
+bigger_block,"L1D=32KB, L1I=32KB, L2=256KB, assoc=4, block=128B",0.915,0.085,0.925,0.075,6.46,1.627,50000000
+smaller_block,"L1D=32KB, L1I=32KB, L2=256KB, assoc=4, block=32B",0.88,0.12,0.935,0.065,7.34,1.453,50000000
+tiny_L1,"L1D=16KB, L1I=16KB, L2=256KB, assoc=4, block=64B",0.84,0.16,0.93,0.07,8.54,1.284,50000000
